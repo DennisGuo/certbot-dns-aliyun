@@ -4,13 +4,13 @@ from setuptools import setup
 from setuptools import find_packages
 
 
-version = '2.0.0'
+version = '3.0.0'
 
 # Remember to update local-oldest-requirements.txt when changing the minimum
 # acme/certbot version.
 install_requires = [
-    'acme>=2.0.0',
-    'certbot>=2.0.0',
+    'acme>=2.7.0',
+    'certbot>=3.0.0',
     'mock',
     'setuptools',
 ]
@@ -28,7 +28,7 @@ setup(
     author="Certbot Project",
     author_email='tengattack@gmail.com',
     license='Apache License 2.0',
-    python_requires='>=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*',
+    python_requires='>=3.12, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*',
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Environment :: Plugins',
@@ -42,6 +42,7 @@ setup(
         'Programming Language :: Python :: 3.9',
         'Programming Language :: Python :: 3.10',
         'Programming Language :: Python :: 3.11',
+        'Programming Language :: Python :: 3.12',
         'Topic :: Internet :: WWW/HTTP',
         'Topic :: Security',
         'Topic :: System :: Installation/Setup',
